@@ -1,0 +1,119 @@
+@mixin images { margin-top: 70px;
+    margin-left:300px;
+    width:30%;
+    }
+
+.post1{
+
+    img{
+        @include images;
+        
+      }
+
+     p{ display: inline-flex;
+        position: relative;
+        left:40px;
+        bottom:150px;
+     font-size: 14px;
+    font-weight: 500;
+
+     }
+
+h2{display: inline-flex;
+    font-size: 30px;
+    font-weight:900;
+    position: relative;
+    bottom: 100px;
+    right:70px;
+}
+
+.icons{
+    margin-left: 630px;
+}
+
+
+.date{
+    position: relative;
+    left:863px;
+    bottom:50px;
+   
+    
+}
+
+
+    }
+
+
+
+    
+    .post2{
+
+        img{
+
+            @include images;
+            
+          }
+    
+         p{ display: inline-flex;
+            position: relative;
+            left:40px;
+            bottom:150px;
+         font-size: 14px;
+        font-weight: 500;
+    
+         }
+    
+    h2{display: inline-flex;
+        font-size: 30px;
+        font-weight:900;
+        position: relative;
+        bottom: 100px;
+        right:70px;
+    }
+    
+    .icons{
+        margin-left: 630px;
+    }
+    
+    
+    .date{
+        position: relative;
+        left:863px;
+        bottom:2px;
+       
+        
+    }
+    
+    
+        }
+
+
+.post3{
+    img{
+        @include images;
+        
+      }
+}
+
+.post5{
+    img{
+        @include images;
+        
+      }
+}
+
+
+.pagination{
+   margin-left:600px; 
+    display: inline-flex;
+    
+
+a{
+    margin-left: 20px;
+    border-style:solid;
+    border-radius: 30%;
+    background-color:#FFD369 ;
+    color:white;
+}
+
+}
