@@ -1,7 +1,6 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,17 +11,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { SharedModule } from './shared/shared.module';
-import { NavComponent } from './shared';
-import { PageModule } from './page/page.module';
-import { ArticolPageComponent } from './page/articol-page/articol-page.component';
-
-registerLocaleData(en);
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticolPageComponent,
-    
+   
   ],
   imports: [
     BrowserModule,
@@ -32,9 +26,7 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     SharedModule,
-    
-    PageModule,
-
+    PagesModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

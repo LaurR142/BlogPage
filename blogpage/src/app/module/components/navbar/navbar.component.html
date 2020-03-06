@@ -1,0 +1,41 @@
+<span class="logo">
+    <a href="#"><h1>Pure</h1></a>
+    <a href="#"><h2>Life</h2></a>
+
+    <div class="nav">
+    <a href="#"><p>Acasă</p></a>
+
+    <a nz-dropdown [nzDropdownMenu]="menu">
+      Despre
+        <i nz-icon nzType="down"></i>
+      </a>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu nzSelectable>
+          <li nz-menu-item>Primul meniu</li>
+          <li nz-menu-item>Al doilea meniu</li>
+          <li nz-menu-item>Al treilea meniu</li>
+        </ul>
+      </nz-dropdown-menu>
+
+      <a href="#"><p>Contact</p></a>
+
+      <a href="#"><p>Element</p></a>
+
+      <a href="#"><p>Alătură-te</p></a>
+
+    </div>
+
+<div class="input">
+      <nz-input-group [nzSuffix]="suffixIconSearch">
+        <input type="text" nz-input placeholder="Caută un articol.." />
+      </nz-input-group>
+      <ng-template #suffixIconSearch>
+        <i nz-icon nzType="search"></i>
+      </ng-template>
+    </div>
+   
+   
+    </span>
+
+    
+    
